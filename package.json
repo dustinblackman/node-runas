@@ -16,20 +16,15 @@
     "url": "https://github.com/atom/node-runas/issues"
   },
   "scripts": {
-    "prepublish": "grunt coffee",
+    "build": "./node_modules/.bin/electron-rebuild",
     "test": "node node_modules/jasmine-focused/bin/jasmine-focused --captureExceptions --coffee spec"
   },
   "devDependencies": {
     "coffee-script": "~1.6.2",
-    "electron-rebuild": "^0.2.5",
-    "grunt": "~0.4.1",
-    "grunt-cli": "~0.1.7",
-    "grunt-contrib-coffee": "~0.6.6",
-    "grunt-shell": "~0.2.2",
-    "jasmine-focused": "^1.0.5",
-    "node-cpplint": "~0.1.5"
+    "electron-rebuild": "^1.4.0"
   },
   "dependencies": {
+    "electron-prebuilt": "^1.3.9",
     "nan": "2.x"
   }
 }
